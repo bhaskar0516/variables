@@ -12,5 +12,5 @@ jobs:
       - name: Docker credentails
         run: docker login --username=bhaskar0516 --password=Docker$16
 
-      - name: Docker push
+      - name: Docker login
         run: docker push bhaskar0516/nginx2:latest
