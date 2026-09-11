@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: artifacts
-        run: actions/checkout@v4
-        
+        uses: actions/checkout@v4
+
       - name: Docker build
         run: docker build -t bhaskar0516/nginx2:latest .
 
