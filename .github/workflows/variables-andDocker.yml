@@ -15,3 +15,12 @@ jobs:
 
       - name: Docker login
         run: docker push bhaskar0516/nginx3:latest
+
+  deploy-job:
+    needs: build-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Docker deploy
+        run: docker run -d -p 8080:80 bhaskar0516/nginx3:latest
+      
+      
