@@ -2,7 +2,7 @@ name: without secrets pipeline
 on: push
 jobs:
   build-job:
-    runs-on: ubtunu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: artifacts
         run: actions/checkout@v4
